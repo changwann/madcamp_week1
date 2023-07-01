@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             } else if (position == 1) {
                 return "사진";
             } else {
-                return "추가기능";
+                return "국어사전";
             }
         }
     }
