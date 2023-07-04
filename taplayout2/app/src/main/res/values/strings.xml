@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">taplayout2</string>
-    <string name="text_explain">[연락처 기능 사용법]\n기본적으로 이 탭에서는 연락처 목록을 보여줍니다.\n1. 전화 걸기 : 해당 연락처를 짧게 누르세요.\n2. 연락처 삭제: 해당 연락처를 길게 누르세요.\n3. 연락처 추가: 우측 하단의 + 버튼을 누르세요.</string>
+    <string name="text_explain">[연락처 기능 사용법]\n기본적으로 이 탭에서는 연락처 목록을 보여줍니다.\n1. 전화 걸기 : 해당 연락처를 짧게 누르세요.\n2. 연락처 삭제: 해당 연락처를 길게 누르세요.\n3. 연락처 추가: 이름과 전화번호를 입력 후 버튼 클릭</string>
 </resources>

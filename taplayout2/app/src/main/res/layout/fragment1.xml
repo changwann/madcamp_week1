@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#FFFFFF"
     android:orientation="vertical">
 
@@ -13,10 +14,41 @@
         android:textSize="15sp"
         android:text="@string/text_explain"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:layout_width="70sp"
+            android:layout_height="48sp"
+            android:textAlignment="center"
+            android:text="이름"
+            tools:ignore="LabelFor"/>
+
+        <EditText
+            android:layout_width="180sp"
+            android:layout_height="48sp"
+            android:importantForAutofill="no"
+            android:id="@+id/editText2"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:text="전화번호"
+            tools:ignore="LabelFor"/>
+        <Button
+            android:id="@+id/btnContactAdd"
+            android:text="연락처 추가"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="mOnContactAdd"/>
+    </LinearLayout>
+
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-
 </LinearLayout>
