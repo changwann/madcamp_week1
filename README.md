@@ -106,6 +106,12 @@ Hardware: Galaxy S7 (Android 8.0.0)
 
 - 탭1, 탭2에 시간을 뺏겨 탭3를 다소 단순한 주제로 잡음. WebView는 기능 구현이 간단해서 탭3에 시간을 쏟지 못한 것이 아쉬움.
 
+## :pushpin: 느낀 점
+
+김창완:
+
+엄창용:
+
 ## :pushpin: 팀원 연락처
 
 김창완 GIST - changwan@gm.gist.ac.kr  
