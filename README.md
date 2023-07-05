@@ -1,22 +1,19 @@
-
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
   </a>
 
-  <h3 align="center">젓가락질 Project</h3>
+  <h1 align="center">:fork_and_knife: 젓가락질 Project</h1>
 
   <p align="center">
-    KAIST 2023 여름 몰입캠프 1주차 과제 (2분반 김창완, 엄창용) 
+    KAIST 2023 여름 몰입캠프 1주차 과제 (2분반 김창완, 엄창용)  
+  <br />
+  <br />
+  <br />
   </p>
 </div>
 
-
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
+## :pushpin: 몰입캠프 1주차 과제 (공통)
 
 1. 공통과제 I (6/29 ~ 7/5) - 탭 구조를 활용한 안드로이드 앱 제작
 목적:
@@ -30,54 +27,69 @@
   - Git에 대한 이해도 높이기
   - github.com에서 퍼블릭 프로젝트로 운영하는 것을 권고 (실제로 현업에서 많이 사용되기에)   
 
-## 개발 환경
-Android Studio에서 java 언어로 개발  
-Android 버전: --.-  
-Galaxy S7
+## :pushpin: 개발 환경
+IDE: Android Studio  
+Language: java    
+minSdk: 24  
+targetSdk: 33  
+Hardware: Galaxy S7  
 
-
-<!-- GETTING STARTED -->
-## 역할 분담
+## :pushpin: 역할 분담
 
 - 공통: 탭 레이아웃 작성  
 - 김창완: 탭1, 탭3  
 - 엄창용: 탭2, git 사용법 공부  
 
 
-## 앱 설명
+## :pushpin: 앱 설명
 
-### 권한 허용 팝업
+### :zero: 권한 허용 팝업
 
 앱을 실행하기 전, 연락처 권한을 허용 받기 위한 팝업 제시.
 사용자가 거부할 경우 앱 실행을 종료한다.
 
-### 탭1 : 연락처
+### :one: 탭1 : 연락처
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/d4a79ed6-235b-4489-9c98-d89427326bc6" width="30%" height="30%">
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/627a9ebd-4466-46b7-92cc-f774224304ed" width="30%" height="30%">
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/3dd97a7f-64b8-4402-b343-9f9b019ed173" width="30%" height="30%">   
 
-휴대폰에 저장되어 있는 연락처를 리스트 형태로 불러와 화면에 보여줌.
-짧게 누를 시, 해당 연락처로 전화를 바로 걸 수 있는 다이얼 화면으로 전환.
-길게 누를 시, 해당 연락처를 삭제.
-상단의 입력 칸에 이름과 전화번호를 적절하게 쓰고 "연락처 추가" 버튼을 누르면 해당 정보로 연락처 추가.
+1. 휴대폰에 저장되어 있는 연락처를 List 형태로 저장해서 화면에 보여줌. (ListView 사용)
+2. 짧게 누를 시, 해당 연락처로 전화를 바로 걸 수 있는 다이얼 화면으로 전환.  
+3. 길게 누를 시, 해당 연락처를 삭제. (위 사진에서는 Jamie 연락처를 삭제함.)
+
+앱을 통한 연락처 수정이 있을 때마다 ListView를 새로고침하여 실시간으로 변경된 정보 확인 가능.  
+
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/792c9c0c-5707-48c0-bc87-4fad1e1821f7" width="30%" height="30%">   
+
+또한, 연락처 수정으로 인해 연락처 목록 순서가 바뀌더라도 알맞게 전화가 걸리는 모습을 확인 가능.
+
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/32c0abd6-4011-4135-ac8f-cf40c10e2529" width="30%" height="30%">  
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/5ac768f4-c44f-4f06-b545-47adc5a2cc13" width="30%" height="30%">  
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/7dbda3ff-571d-4509-8e14-86ff89ba94b7" width="30%" height="30%">  
+
+상단의 입력 칸에 이름과 전화번호를 쓰고 "연락처 추가" 버튼을 누르면 해당 정보로 연락처 추가.
+전화번호를 적는 EditText는 편의를 위해 숫자만 입력하더라도 010-xxxx-xxxx 형식으로 알아서 맞춰지게끔 구현함.
 
 - 연락처 프로필 사진, 메모, 이메일 등 더 다양한 기능을 구현해야 함.
 
-### 탭2 : 갤러리
+### :two: 탭2 : 갤러리
 
 "불러오기" 버튼을 누르면 휴대폰 내부저장소에서 사진 파일을 고를 수 있고,
-선택된 사진은 갤러리 형태로 화면에 나타남.
+선택된 사진은 갤러리 형태로 화면에 나타남. (GridView 사용)
  
 - 앱을 재실행했을 때 갤러리가 초기화되는 문제 해결해야 함. -> SQLite로 구현 시도 중  
 - 삭제 버튼 구현해야 함.  
 
-### 탭3 : 국어사전
+### :three: 탭3 : 국어사전
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/3dfbfcd0-49ca-491f-8004-0c70f150f2ee" width="30%" height="30%"> 
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/21f38882-498d-4a33-b99d-944efc4b103c" width="30%" height="30%">  
 
-네이버 국어사전을 바로 화면에 띄워서 사용자가 원하는 단어 검색을 할 수 있게끔 구현.
+네이버 국어사전을 연결해 사용자가 원하는 단어 검색을 할 수 있게끔 구현. (WebView 사용)  
+단, 기기가 인터넷에 연결되어 있어야 함.
 
-- 탭1, 탭2에 시간을 뺏겨 탭3를 다소 단순한 주제로 잡음. WebView 역시 기능 구현이 간단해서 탭3에 시간을 쏟지 못한 것이 아쉬움.
+- 탭1, 탭2에 시간을 뺏겨 탭3를 다소 단순한 주제로 잡음. WebView는 기능 구현이 간단해서 탭3에 시간을 쏟지 못한 것이 아쉬움.
 
-<!-- CONTACT -->
-## Contact
+## :pushpin: 팀원 연락처
 
 김창완 GIST - changwan@gm.gist.ac.kr  
 엄창용 KAIST - um8389@kaist.ac.kr
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
