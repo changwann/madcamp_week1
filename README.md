@@ -32,7 +32,7 @@ IDE: Android Studio
 Language: java    
 minSdk: 24  
 targetSdk: 33  
-Hardware: Galaxy S7  
+Hardware: Galaxy S7 (Android 8.0.0)
 
 ## :pushpin: 역할 분담
 
