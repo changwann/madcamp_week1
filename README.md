@@ -45,6 +45,8 @@ Hardware: Galaxy S7 (Android 8.0.0)
 
 ### :zero: 권한 허용 팝업
 
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/645f6306-5376-4efe-83e2-0e3dd0b3b654" width="30%" height="30%">
+  
 앱을 실행하기 전, 연락처 권한을 허용 받기 위한 팝업 제시.
 사용자가 거부할 경우 앱 실행을 종료한다.
 
@@ -71,14 +73,29 @@ Hardware: Galaxy S7 (Android 8.0.0)
 전화번호를 적는 EditText는 편의를 위해 숫자만 입력하더라도 010-xxxx-xxxx 형식으로 알아서 맞춰지게끔 구현함.
 
 - 연락처 프로필 사진, 메모, 이메일 등 더 다양한 기능을 구현해야 함.
+- EditText와 Button의 width를 pixel 단위가 아닌 weight 비율로 구현해야 함. 
 
 ### :two: 탭2 : 갤러리
 
-"불러오기" 버튼을 누르면 휴대폰 내부저장소에서 사진 파일을 고를 수 있고,
-선택된 사진은 갤러리 형태로 화면에 나타남. (GridView 사용)
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/34a210dd-fdcc-4369-ac27-932703f38278" width="30%" height="30%"> 
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/8621ee9b-3fac-46b0-9942-ace50f8579a7" width="30%" height="30%"> 
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/949e1712-6d28-4271-b317-97f6db09179b" width="30%" height="30%"> 
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/98b2cf47-8bde-4a96-ba77-34b64bb39321" width="30%" height="30%"> 
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/c2b836d9-b46a-4e08-9d35-09ecd3c1c53b" width="30%" height="30%"> 
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/45eb5ec4-40e3-4797-b8e5-7aff0db94471" width="30%" height="30%"> 
+
+1. "사진" 탭을 누르면 빈 화면으로 시작.
+2. "불러오기" 버튼을 누르면 휴대폰 내부저장소에서 사진 파일을 고를 수 있음. 
+3. "포토" 버튼을 누르면 휴대폰 갤러리에서 사진을 선택할 수 있음.
+4. 선택된 사진은 갤러리 형태로 화면에 나타남. (GridView 사용)
+5. 메인 화면에서 원하는 사진을 한 번 더 누르면, 해당 사진 탭이 나옴.
+6. "삭제" 버튼을 누르고 삭제를 원하는 사진을 누르면 해당 사진은 메인 화면에서 없어짐.
+
+<img src = "https://github.com/changwann/madcamp_week1/assets/122224659/eda492ae-b154-4752-a908-c4bb82a8f976" width="30%" height="30%"> 
+
+7. 사진 추가는 원하는 만큼 가능함.
  
 - 앱을 재실행했을 때 갤러리가 초기화되는 문제 해결해야 함. -> SQLite로 구현 시도 중  
-- 삭제 버튼 구현해야 함.  
 
 ### :three: 탭3 : 국어사전
 <img src = "https://github.com/changwann/madcamp_week1/assets/122224659/3dfbfcd0-49ca-491f-8004-0c70f150f2ee" width="30%" height="30%"> 
